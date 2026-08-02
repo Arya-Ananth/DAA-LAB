@@ -19,6 +19,7 @@ class UnionFind:
         if self.rank[rx] < self.rank[ry]:
             rx, ry = ry, rx
         self.parent[ry] = rx
+        
         if self.rank[rx] == self.rank[ry]:
             self.rank[rx] += 1
         return True
